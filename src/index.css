@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-earth-950 text-earth-100 font-sans antialiased;
+    background-image:
+      radial-gradient(ellipse 80% 50% at 50% -20%, rgba(45, 84, 52, 0.25), transparent),
+      radial-gradient(ellipse 60% 40% at 80% 100%, rgba(88, 66, 52, 0.2), transparent);
+    min-height: 100vh;
+  }
+}
+
+@layer utilities {
+  .card-glow:hover {
+    box-shadow:
+      0 0 0 1px rgba(197, 176, 142, 0.15),
+      0 8px 32px rgba(0, 0, 0, 0.4),
+      0 2px 8px rgba(45, 84, 52, 0.15);
+  }
+}
