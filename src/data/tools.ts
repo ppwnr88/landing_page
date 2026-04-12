@@ -12,7 +12,7 @@ export const tools: Tool[] = [
     id: 'sql',
     title: 'SQL Client',
     description: 'Run SQL queries directly from your browser',
-    url: 'https://sql.wannarat.cc',
+    url: 'https://sql.wannarat.cc/login',
     icon: 'Database',
     accent: 'from-forest-800 to-forest-900',
   },
