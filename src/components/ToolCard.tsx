@@ -5,6 +5,7 @@ import {
   Terminal,
   Link2,
   QrCode,
+  IdCard,
   ArrowUpRight,
   LucideIcon,
 } from 'lucide-react'
@@ -17,6 +18,7 @@ const iconMap: Record<string, LucideIcon> = {
   Terminal,
   Link2,
   QrCode,
+  IdCard,
 }
 
 interface ToolCardProps {

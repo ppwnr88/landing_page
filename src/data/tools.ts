@@ -56,4 +56,12 @@ export const tools: Tool[] = [
     icon: 'QrCode',
     accent: 'from-earth-800 to-earth-900',
   },
+  {
+    id: 'id',
+    title: 'Random ID Card',
+    description: 'Generate random ID card data for any country worldwide',
+    url: 'https://id.wannarat.cc',
+    icon: 'IdCard',
+    accent: 'from-forest-800 to-forest-900',
+  },
 ]
