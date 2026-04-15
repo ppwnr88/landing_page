@@ -64,4 +64,12 @@ export const tools: Tool[] = [
     icon: 'IdCard',
     accent: 'from-forest-800 to-forest-900',
   },
+  {
+    id: 'time',
+    title: 'World Clock',
+    description: 'Check current time across timezones instantly',
+    url: 'https://time.wannarat.cc',
+    icon: 'Clock',
+    accent: 'from-earth-800 to-earth-900',
+  },
 ]
