@@ -74,8 +74,8 @@ export const tools: Tool[] = [
   },
   {
     id: 'editor',
-    title: 'Online Editor',
-    description: 'Write and edit code directly in your browser',
+    title: 'PPText Editor',
+    description: 'Local workspace editor with fast file switching and a Sublime-inspired writing feel',
     url: 'https://editor.wannarat.cc',
     icon: 'FileCode',
     accent: 'from-forest-800 to-forest-900',
