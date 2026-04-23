@@ -7,6 +7,7 @@ import {
   QrCode,
   IdCard,
   Clock,
+  FileCode,
   ArrowUpRight,
   LucideIcon,
 } from 'lucide-react'
@@ -21,6 +22,7 @@ const iconMap: Record<string, LucideIcon> = {
   QrCode,
   IdCard,
   Clock,
+  FileCode,
 }
 
 interface ToolCardProps {

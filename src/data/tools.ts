@@ -72,4 +72,12 @@ export const tools: Tool[] = [
     icon: 'Clock',
     accent: 'from-earth-800 to-earth-900',
   },
+  {
+    id: 'editor',
+    title: 'Online Editor',
+    description: 'Write and edit code directly in your browser',
+    url: 'https://editor.wannarat.cc',
+    icon: 'FileCode',
+    accent: 'from-forest-800 to-forest-900',
+  },
 ]
