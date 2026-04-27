@@ -1,4 +1,4 @@
-import { Helmet } from 'react-helmet'
+import { Helmet } from 'react-helmet-async'
 import { tools } from '../data/tools'
 import { ToolCard } from '../components/ToolCard'
 
