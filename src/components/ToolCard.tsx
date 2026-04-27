@@ -8,6 +8,7 @@ import {
   IdCard,
   Clock,
   FileCode,
+  Calculator,
   ArrowUpRight,
   LucideIcon,
 } from 'lucide-react'
@@ -23,6 +24,7 @@ const iconMap: Record<string, LucideIcon> = {
   IdCard,
   Clock,
   FileCode,
+  Calculator,
 }
 
 interface ToolCardProps {

@@ -80,4 +80,12 @@ export const tools: Tool[] = [
     icon: 'FileCode',
     accent: 'from-forest-800 to-forest-900',
   },
+  {
+    id: 'dream',
+    title: 'เลขนำโชค',
+    description: 'คำนวณเลขนำโชคจากข้อความ',
+    url: 'https://dream.wannarat.cc/',
+    icon: 'Calculator',
+    accent: 'from-earth-800 to-earth-900',
+  },
 ]
