@@ -1,5 +1,5 @@
 import { Helmet } from 'react-helmet-async'
-import { Wrench, ShieldCheck, BookOpen, Mail, Sparkles } from 'lucide-react'
+import { ShieldCheck, BookOpen, Mail, Sparkles, Terminal, Activity } from 'lucide-react'
 import { tools } from './data/tools'
 import { ToolCard } from './components/ToolCard'
 
@@ -41,7 +41,7 @@ const faqs = [
 
 export default function App() {
   return (
-    <div className="flex min-h-screen flex-col">
+    <div className="flex min-h-screen flex-col terminal-scanline">
       <Helmet>
         <title>wannarat.cc - Free Online Tools for Developers</title>
         <meta
@@ -57,56 +57,73 @@ export default function App() {
         }}
       />
 
-      <header className="relative border-b border-earth-800/50 bg-earth-950/80 backdrop-blur-md">
+      <header className="relative border-b border-forest-500/20 bg-earth-950/90 backdrop-blur-md">
         <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-6 py-4">
           <a href="/" className="flex items-center gap-3" aria-label="wannarat.cc home">
-            <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-forest-800 ring-1 ring-forest-700/50">
-              <Wrench className="h-4 w-4 text-earth-200" strokeWidth={1.75} />
+            <div className="flex h-8 w-8 items-center justify-center rounded-md border border-forest-500/40 bg-earth-900 text-forest-300 shadow-[0_0_22px_rgba(25,183,99,0.16)]">
+              <Terminal className="h-4 w-4" strokeWidth={1.75} />
             </div>
-            <span className="text-sm font-semibold tracking-wide text-earth-200">
-              wannarat<span className="text-earth-500">.cc</span>
+            <span className="text-sm font-semibold tracking-wide text-earth-100">
+              wannarat<span className="text-forest-400">.cc</span>
             </span>
           </a>
 
           <nav
-            className="hidden items-center gap-5 text-sm text-earth-400 md:flex"
+            className="hidden items-center gap-5 text-xs uppercase tracking-wide text-earth-400 md:flex"
             aria-label="Main navigation"
           >
-            <a className="transition hover:text-earth-100" href="#tools">Tools</a>
-            <a className="transition hover:text-earth-100" href="/blog">Guides</a>
-            <a className="transition hover:text-earth-100" href="/about">About</a>
-            <a className="transition hover:text-earth-100" href="/contact">Contact</a>
-            <a className="transition hover:text-earth-100" href="/privacy-policy">Privacy</a>
+            <a className="transition hover:text-forest-300" href="#tools">./tools</a>
+            <a className="transition hover:text-forest-300" href="/blog">./guides</a>
+            <a className="transition hover:text-forest-300" href="/about">./about</a>
+            <a className="transition hover:text-forest-300" href="/contact">./contact</a>
+            <a className="transition hover:text-forest-300" href="/privacy-policy">./privacy</a>
           </nav>
         </div>
       </header>
 
       <main className="relative mx-auto w-full max-w-6xl flex-1 px-6 py-14 md:py-20">
-        <section className="mb-14 animate-fade-in text-center">
-          <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-forest-700/40 bg-forest-900/30 px-4 py-1.5 text-xs font-medium tracking-wide text-forest-300">
-            <span className="relative flex h-1.5 w-1.5">
-              <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-forest-400 opacity-75" />
-              <span className="relative inline-flex h-1.5 w-1.5 rounded-full bg-forest-500" />
-            </span>
-            Practical web tools for developers and daily productivity
+        <section className="mb-14 animate-fade-in overflow-hidden rounded-lg border border-forest-500/25 bg-earth-950/85 shadow-2xl shadow-black/40">
+          <div className="flex items-center justify-between border-b border-earth-800 bg-earth-900 px-4 py-3">
+            <div className="flex items-center gap-2">
+              <span className="h-3 w-3 rounded-full bg-[#ff5f56]" />
+              <span className="h-3 w-3 rounded-full bg-[#ffbd2e]" />
+              <span className="h-3 w-3 rounded-full bg-[#27c93f]" />
+            </div>
+            <div className="hidden text-xs text-earth-500 sm:block">/Applications/wannarat.cc</div>
+            <Activity className="h-4 w-4 text-forest-400" strokeWidth={1.75} />
           </div>
 
-          <h1 className="mb-4 text-4xl font-bold tracking-tight text-earth-50 md:text-5xl lg:text-6xl">
-            Free browser-based tools
-            <br />
-            <span className="bg-gradient-to-r from-earth-300 via-earth-200 to-forest-300 bg-clip-text text-transparent">
-              with simple guides
-            </span>
-          </h1>
+          <div className="px-5 py-8 md:px-10 md:py-12">
+            <div className="mb-5 inline-flex items-center gap-2 border border-forest-500/30 bg-forest-950/70 px-3 py-1.5 text-xs font-medium tracking-wide text-forest-300">
+              <span className="relative flex h-1.5 w-1.5">
+                <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-forest-400 opacity-75" />
+                <span className="relative inline-flex h-1.5 w-1.5 rounded-full bg-forest-500" />
+              </span>
+              SESSION ACTIVE
+            </div>
 
-          <p className="mx-auto max-w-2xl text-base leading-relaxed text-earth-400 md:text-lg">
-            wannarat.cc collects lightweight utilities for SQL testing, secure password creation,
-            API checks, QR generation, time zones, text editing, and developer workflows.
-            Each tool is designed to be quick, accessible, and useful without installing extra software.
-          </p>
+            <p className="mb-3 text-sm text-earth-500">
+              <span className="text-forest-300">ppwnr@wannarat</span>
+              <span className="text-earth-600">:</span>
+              <span className="text-[#58a6ff]">~/toolkit</span>
+              <span className="text-earth-600">$</span> ./open
+            </p>
+
+            <h1 className="max-w-4xl text-4xl font-bold tracking-tight text-earth-50 md:text-5xl lg:text-6xl">
+              Free browser-based tools
+              <br />
+              <span className="text-forest-300">with simple guides</span>
+            </h1>
+
+            <p className="mt-5 max-w-3xl text-base leading-relaxed text-earth-300 md:text-lg">
+              wannarat.cc collects lightweight utilities for SQL testing, secure password creation,
+              API checks, QR generation, time zones, text editing, and developer workflows.
+              Each tool is designed to be quick, accessible, and useful without installing extra software.
+            </p>
+          </div>
         </section>
 
-        <section className="mx-auto mb-14 max-w-3xl text-center text-sm leading-7 text-earth-400">
+        <section className="mx-auto mb-14 max-w-3xl border-l border-forest-500/30 pl-5 text-sm leading-7 text-earth-400">
           <p className="mb-4">
             This website provides a curated collection of browser-based tools designed to help
             developers, designers, and everyday users complete common tasks more efficiently.
@@ -140,7 +157,7 @@ export default function App() {
           ].map(({ icon: Icon, title, text }) => (
             <article
               key={title}
-              className="rounded-2xl border border-earth-800/40 bg-earth-900/30 p-5 backdrop-blur-sm"
+              className="border border-earth-800 bg-earth-950/70 p-5 backdrop-blur-sm"
             >
               <Icon className="mb-3 h-5 w-5 text-forest-300" strokeWidth={1.75} />
               <h2 className="mb-2 text-base font-semibold text-earth-100">{title}</h2>
@@ -152,14 +169,16 @@ export default function App() {
         <section id="tools" className="scroll-mt-24">
           <div className="mb-6 flex flex-col gap-2 md:flex-row md:items-end md:justify-between">
             <div>
-              <h2 className="text-2xl font-bold text-earth-50">Tool directory</h2>
+              <h2 className="text-2xl font-bold text-earth-50">
+                <span className="text-forest-300">$</span> ls ./tools
+              </h2>
               <p className="mt-2 max-w-2xl text-sm leading-6 text-earth-400">
                 Choose a tool below. For better transparency, each tool should also have its own detail page
                 with features, usage steps, examples, FAQ, and clear disclaimers where needed.
               </p>
             </div>
             <a href="/tools" className="text-sm font-medium text-forest-300 hover:text-forest-200">
-              View all tools →
+              View all tools
             </a>
           </div>
 
@@ -179,7 +198,9 @@ export default function App() {
         <section id="guides" className="mt-16 scroll-mt-24">
           <div className="mb-6 flex flex-col gap-2 md:flex-row md:items-end md:justify-between">
             <div>
-              <h2 className="text-2xl font-bold text-earth-50">Latest guides</h2>
+              <h2 className="text-2xl font-bold text-earth-50">
+                <span className="text-forest-300">$</span> cat ./guides/latest
+              </h2>
               <p className="mt-2 max-w-2xl text-sm leading-6 text-earth-400">
                 These guides explain how to use tools effectively. You can also explore the full{' '}
                 <a href="/tools" className="text-forest-300 hover:underline">
@@ -193,7 +214,7 @@ export default function App() {
             </div>
 
             <a href="/blog" className="text-sm font-medium text-forest-300 hover:text-forest-200">
-              View all guides →
+              View all guides
             </a>
           </div>
 
@@ -201,7 +222,7 @@ export default function App() {
             {guides.map((guide) => (
               <article
                 key={guide.href}
-                className="rounded-2xl border border-earth-800/40 bg-earth-900/30 p-5 backdrop-blur-sm"
+                className="border border-earth-800 bg-earth-950/70 p-5 backdrop-blur-sm transition hover:border-forest-500/40"
               >
                 <h3 className="mb-2 text-base font-semibold text-earth-100">
                   <a href={guide.href} className="hover:text-forest-300">
@@ -213,14 +234,14 @@ export default function App() {
                   href={guide.href}
                   className="text-sm font-medium text-forest-300 hover:text-forest-200"
                 >
-                  Read guide →
+                  Read guide
                 </a>
               </article>
             ))}
           </div>
         </section>
 
-        <section className="mt-16 grid gap-6 rounded-2xl border border-earth-800/40 bg-earth-900/30 p-6 backdrop-blur-sm lg:grid-cols-[0.9fr_1.1fr]">
+        <section className="mt-16 grid gap-6 border border-earth-800 bg-earth-950/70 p-6 backdrop-blur-sm lg:grid-cols-[0.9fr_1.1fr]">
           <div>
             <h2 className="text-2xl font-bold text-earth-50">About wannarat.cc</h2>
             <p className="mt-3 text-sm leading-6 text-earth-400">
@@ -258,7 +279,7 @@ export default function App() {
           </p>
         </section>
 
-        <div className="mt-16 grid grid-cols-3 gap-4 rounded-2xl border border-earth-800/40 bg-earth-900/30 p-6 text-center backdrop-blur-sm">
+        <div className="mt-16 grid grid-cols-3 gap-4 border border-forest-500/25 bg-earth-950/80 p-6 text-center backdrop-blur-sm">
           {[
             { label: 'Tools', value: String(tools.length) },
             { label: 'Guides planned', value: '10+' },
