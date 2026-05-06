@@ -15,9 +15,14 @@ import StrongPasswords from './pages/blog/StrongPasswords'
 import WhatIsQrCode from './pages/blog/WhatIsQrCode'
 import HowUrlShortenersWork from './pages/blog/HowUrlShortenersWork'
 import Tools from './pages/Tools'
+import ToolDetail from './pages/ToolDetail'
 import ApiTestingGuide from './pages/blog/how-to-test-api-requests'
 import SqlGuide from './pages/blog/sql-client-vs-database-gui'
 import TimezoneGuide from './pages/blog/timezone-guide-for-remote-teams'
+import ScreenRulerLayouts from './pages/blog/screen-ruler-web-layouts'
+import TestDataGeneratorDevelopment from './pages/blog/test-data-generator-development'
+import BrowserTextEditorWorkflows from './pages/blog/browser-text-editor-workflows'
+import EntertainmentNumberTools from './pages/blog/entertainment-number-tools'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
@@ -35,9 +40,14 @@ createRoot(document.getElementById('root')!).render(
           <Route path="/disclaimer" element={<Disclaimer />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/tools" element={<Tools />} />
+          <Route path="/tools/:id" element={<ToolDetail />} />
           <Route path="/blog/how-to-test-api-requests" element={<ApiTestingGuide />} />
           <Route path="/blog/sql-client-vs-database-gui" element={<SqlGuide />} />
           <Route path="/blog/timezone-guide-for-remote-teams" element={<TimezoneGuide />} />
+          <Route path="/blog/screen-ruler-web-layouts" element={<ScreenRulerLayouts />} />
+          <Route path="/blog/test-data-generator-development" element={<TestDataGeneratorDevelopment />} />
+          <Route path="/blog/browser-text-editor-workflows" element={<BrowserTextEditorWorkflows />} />
+          <Route path="/blog/entertainment-number-tools" element={<EntertainmentNumberTools />} />
         </Routes>
       </BrowserRouter>
     </HelmetProvider>

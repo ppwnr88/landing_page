@@ -1,6 +1,17 @@
+import { Helmet } from 'react-helmet-async'
+
 export default function PrivacyPolicy() {
   return (
     <main className="mx-auto max-w-4xl px-6 py-16 text-earth-300">
+      <Helmet>
+        <title>Privacy Policy - wannarat.cc</title>
+        <meta
+          name="description"
+          content="Privacy policy for wannarat.cc, including tool data, generated content, analytics, Google AdSense advertising cookies, and contact information."
+        />
+        <link rel="canonical" href="https://wannarat.cc/privacy-policy" />
+      </Helmet>
+
       <h1 className="text-3xl font-bold text-earth-50">Privacy Policy</h1>
 
       <p className="mt-4 text-sm leading-7 text-earth-400">
@@ -38,6 +49,11 @@ export default function PrivacyPolicy() {
           If advertising services such as Google AdSense are used, third-party vendors may use cookies to serve ads based
           on prior visits to this or other websites.
         </p>
+        <p>
+          Google and its partners may use cookies or similar technologies to serve, limit, and measure ads.
+          Users may manage personalized advertising preferences through Google Ad Settings or browser-level
+          cookie controls. Advertising cookies are separate from the basic tool content provided on this site.
+        </p>
       </section>
 
       <section className="mt-8 space-y-4 text-sm leading-7 text-earth-400">
@@ -56,7 +72,7 @@ export default function PrivacyPolicy() {
       </section>
 
       <p className="mt-10 text-xs text-earth-600">
-        Last updated: April 27, 2026
+        Last updated: May 6, 2026
       </p>
     </main>
   )

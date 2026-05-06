@@ -1,59 +1,115 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
   <url>
     <loc>https://wannarat.cc/</loc>
     <priority>1.0</priority>
   </url>
-
   <url>
     <loc>https://wannarat.cc/tools</loc>
     <priority>0.9</priority>
   </url>
-
   <url>
     <loc>https://wannarat.cc/blog</loc>
-    <priority>0.8</priority>
+    <priority>0.9</priority>
   </url>
-
   <url>
     <loc>https://wannarat.cc/about</loc>
     <priority>0.7</priority>
   </url>
-
   <url>
     <loc>https://wannarat.cc/contact</loc>
     <priority>0.7</priority>
   </url>
-
   <url>
     <loc>https://wannarat.cc/privacy-policy</loc>
     <priority>0.6</priority>
   </url>
-
   <url>
     <loc>https://wannarat.cc/terms</loc>
     <priority>0.6</priority>
   </url>
-
   <url>
     <loc>https://wannarat.cc/disclaimer</loc>
     <priority>0.6</priority>
   </url>
-
+  <url>
+    <loc>https://wannarat.cc/tools/sql</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://wannarat.cc/tools/passgen</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://wannarat.cc/tools/ruler</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://wannarat.cc/tools/curl</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://wannarat.cc/tools/go</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://wannarat.cc/tools/qr</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://wannarat.cc/tools/id</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://wannarat.cc/tools/time</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://wannarat.cc/tools/editor</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://wannarat.cc/tools/dream</loc>
+    <priority>0.8</priority>
+  </url>
   <url>
     <loc>https://wannarat.cc/blog/how-to-create-strong-passwords</loc>
     <priority>0.8</priority>
   </url>
-
   <url>
     <loc>https://wannarat.cc/blog/what-is-qr-code</loc>
     <priority>0.8</priority>
   </url>
-
   <url>
     <loc>https://wannarat.cc/blog/how-url-shorteners-work</loc>
     <priority>0.8</priority>
   </url>
-
+  <url>
+    <loc>https://wannarat.cc/blog/how-to-test-api-requests</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://wannarat.cc/blog/sql-client-vs-database-gui</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://wannarat.cc/blog/timezone-guide-for-remote-teams</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://wannarat.cc/blog/screen-ruler-web-layouts</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://wannarat.cc/blog/test-data-generator-development</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://wannarat.cc/blog/browser-text-editor-workflows</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://wannarat.cc/blog/entertainment-number-tools</loc>
+    <priority>0.8</priority>
+  </url>
 </urlset>

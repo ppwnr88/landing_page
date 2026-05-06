@@ -29,6 +29,12 @@ export default function Tools() {
           You can use these tools for productivity, testing, and learning purposes. Each tool focuses
           on simplicity, speed, and usability, with minimal setup required.
         </p>
+
+        <p className="mt-3 max-w-3xl text-sm leading-7 text-earth-400">
+          Every tool now has a local detail page on wannarat.cc with usage steps, limitations,
+          frequently asked questions, and related guides. This keeps the main website useful even
+          before you open the standalone tool app.
+        </p>
       </section>
 
       {/* TOOL GRID */}
@@ -47,9 +53,9 @@ export default function Tools() {
         </h2>
 
         <p className="mb-3">
-          Most tools can be used instantly by clicking the tool card. Some tools may open in a new
-          tab and do not require login. If login is required, it is only for features such as saving
-          data or managing personal workspace.
+          Click any tool card to read the local guide first. Each guide explains what the tool does,
+          when it is useful, what to watch out for, and then provides a clear button to open the
+          actual tool on its subdomain.
         </p>
 
         <p>

@@ -37,12 +37,10 @@ export function ToolCard({ tool, index }: ToolCardProps) {
 
   return (
     <a
-      href={tool.url}
-      target="_blank"
-      rel="noopener noreferrer"
+      href={`/tools/${tool.id}`}
       className="card-glow group relative flex min-h-[188px] flex-col gap-4 border border-earth-800 bg-earth-950/75 p-5 backdrop-blur-sm transition-all duration-300 hover:-translate-y-1 hover:border-forest-500/50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-forest-500"
       style={{ animationDelay: `${index * 80}ms` }}
-      aria-label={`Open ${tool.title}`}
+      aria-label={`Read about ${tool.title}`}
     >
       <div className="absolute left-0 top-0 h-px w-full bg-gradient-to-r from-forest-500/0 via-forest-400/50 to-forest-500/0" />
 
@@ -53,7 +51,7 @@ export function ToolCard({ tool, index }: ToolCardProps) {
       </div>
 
       <div className="flex flex-col gap-1">
-        <p className="text-xs uppercase tracking-widest text-earth-600">tool --open</p>
+        <p className="text-xs uppercase tracking-widest text-earth-600">tool --readme</p>
         <h3 className="text-base font-semibold tracking-tight text-earth-100 transition-colors duration-200 group-hover:text-white">
           {tool.title}
         </h3>
