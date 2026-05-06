@@ -24,7 +24,7 @@ export const tools: Tool[] = [
       'Debug database issues',
       'Practice SQL learning',
     ],
-    url: 'https://sql.wannarat.cc/login',
+    url: 'https://sql.wannarat.cc/',
     icon: 'Database',
     accent: 'from-forest-800 to-forest-900',
   },
