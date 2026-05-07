@@ -23,6 +23,7 @@ import ScreenRulerLayouts from './pages/blog/screen-ruler-web-layouts'
 import TestDataGeneratorDevelopment from './pages/blog/test-data-generator-development'
 import BrowserTextEditorWorkflows from './pages/blog/browser-text-editor-workflows'
 import EntertainmentNumberTools from './pages/blog/entertainment-number-tools'
+import HashGeneratorChecksumGuide from './pages/blog/hash-generator-checksum-guide'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
@@ -48,6 +49,7 @@ createRoot(document.getElementById('root')!).render(
           <Route path="/blog/test-data-generator-development" element={<TestDataGeneratorDevelopment />} />
           <Route path="/blog/browser-text-editor-workflows" element={<BrowserTextEditorWorkflows />} />
           <Route path="/blog/entertainment-number-tools" element={<EntertainmentNumberTools />} />
+          <Route path="/blog/hash-generator-checksum-guide" element={<HashGeneratorChecksumGuide />} />
         </Routes>
       </BrowserRouter>
     </HelmetProvider>

@@ -166,4 +166,21 @@ export const tools: Tool[] = [
     icon: 'Calculator',
     accent: 'from-earth-800 to-earth-900',
   },
+  {
+    id: 'hash',
+    title: 'Hash Generator',
+    description: 'Generate hashes and checksums from text',
+    longDescription:
+      'Generate hash values for text input to compare data, learn checksum concepts, and understand common hash algorithms in a lightweight browser tool.',
+    useCases: [
+      'Generate text hashes',
+      'Compare checksums',
+      'Learn hash concepts',
+    ],
+    disclaimer:
+      'Hashing is not encryption. Do not use simple hashes as a complete password storage or secret-protection solution.',
+    url: 'https://hash.wannarat.cc',
+    icon: 'Hash',
+    accent: 'from-forest-800 to-forest-900',
+  },
 ]

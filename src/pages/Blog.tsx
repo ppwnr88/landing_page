@@ -54,6 +54,11 @@ const posts = [
     description: 'Understand playful number generators and why outputs should not be treated as advice.',
     href: '/blog/entertainment-number-tools',
   },
+  {
+    title: 'Hash generator and checksum guide',
+    description: 'Learn hashing, checksums, hash vs encryption, and safe limits for security workflows.',
+    href: '/blog/hash-generator-checksum-guide',
+  },
 ]
 
 export default function Blog() {

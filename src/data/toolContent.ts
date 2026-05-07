@@ -437,4 +437,48 @@ export const toolContent: Record<string, ToolContent> = {
       },
     ],
   },
+  hash: {
+    overview: [
+      'The Hash Generator creates hash values from text input. Hashes are commonly used for comparing data, checking whether content changed, learning how algorithms represent input, and creating repeatable fingerprints for non-secret values.',
+      'A hash is designed to be one-way: the same input should produce the same output, but the output should not be treated as a readable or reversible version of the original text. This makes hashes useful for comparison, but different from encryption.',
+    ],
+    steps: [
+      'Open the Hash Generator.',
+      'Enter the text value you want to hash.',
+      'Choose the available hash algorithm or compare outputs across algorithms.',
+      'Copy the hash only when it is safe to share.',
+      'Avoid entering passwords, private keys, access tokens, or sensitive production data.',
+    ],
+    bestFor: [
+      'Generating hashes from text',
+      'Comparing checksum-style values',
+      'Learning the difference between hashing and encryption',
+      'Creating repeatable fingerprints for non-sensitive examples',
+    ],
+    examples: [
+      'Generate a hash for a sample string while learning how SHA-style outputs look.',
+      'Compare two text values by checking whether their generated hashes match.',
+      'Create a checksum-like reference for documentation examples or test fixtures.',
+    ],
+    limitations: [
+      'Hashing is not encryption because it is not meant to be reversed.',
+      'Fast hashes are not enough for safe password storage by themselves.',
+      'MD5 and SHA-1 are not recommended for security-sensitive integrity or collision-resistance needs.',
+      'Never paste secrets into a tool unless you understand exactly how the tool handles input.',
+    ],
+    relatedGuides: [
+      { title: 'Hash generator and checksum guide', href: '/blog/hash-generator-checksum-guide' },
+      { title: 'How to create strong passwords safely', href: '/blog/how-to-create-strong-passwords' },
+    ],
+    faq: [
+      {
+        q: 'Is hashing the same as encryption?',
+        a: 'No. Encryption is designed to be reversible with the right key. Hashing is designed to create a one-way fingerprint for comparison.',
+      },
+      {
+        q: 'Can I hash passwords with this tool for production storage?',
+        a: 'No. Production password storage should use dedicated password hashing algorithms such as bcrypt, scrypt, or Argon2 with salts and appropriate work factors.',
+      },
+    ],
+  },
 }
