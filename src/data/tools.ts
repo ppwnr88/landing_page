@@ -183,4 +183,19 @@ export const tools: Tool[] = [
     icon: 'Hash',
     accent: 'from-forest-800 to-forest-900',
   },
+  {
+    id: 'noyap',
+    title: 'Noyap',
+    description: 'Concise rules for AI coding agents',
+    longDescription:
+      'Noyap is a CLI-first ruleset that helps AI coding agents communicate more concisely, preserve useful warnings, and support multilingual developer workflows.',
+    useCases: [
+      'Reduce verbose AI responses',
+      'Set coding-agent communication rules',
+      'Support Thai and English developer prompts',
+    ],
+    url: 'https://noyap.wannarat.cc',
+    icon: 'Bot',
+    accent: 'from-earth-800 to-earth-900',
+  },
 ]

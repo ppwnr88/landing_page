@@ -24,6 +24,7 @@ import TestDataGeneratorDevelopment from './pages/blog/test-data-generator-devel
 import BrowserTextEditorWorkflows from './pages/blog/browser-text-editor-workflows'
 import EntertainmentNumberTools from './pages/blog/entertainment-number-tools'
 import HashGeneratorChecksumGuide from './pages/blog/hash-generator-checksum-guide'
+import NoyapAiCodingAgentGuide from './pages/blog/noyap-ai-coding-agent-guide'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
@@ -50,6 +51,7 @@ createRoot(document.getElementById('root')!).render(
           <Route path="/blog/browser-text-editor-workflows" element={<BrowserTextEditorWorkflows />} />
           <Route path="/blog/entertainment-number-tools" element={<EntertainmentNumberTools />} />
           <Route path="/blog/hash-generator-checksum-guide" element={<HashGeneratorChecksumGuide />} />
+          <Route path="/blog/noyap-ai-coding-agent-guide" element={<NoyapAiCodingAgentGuide />} />
         </Routes>
       </BrowserRouter>
     </HelmetProvider>

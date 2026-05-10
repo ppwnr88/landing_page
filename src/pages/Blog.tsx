@@ -59,6 +59,11 @@ const posts = [
     description: 'Learn hashing, checksums, hash vs encryption, and safe limits for security workflows.',
     href: '/blog/hash-generator-checksum-guide',
   },
+  {
+    title: 'Noyap guide for concise AI coding agents',
+    description: 'Use concise agent rules without losing warnings, verification, or project-specific safety notes.',
+    href: '/blog/noyap-ai-coding-agent-guide',
+  },
 ]
 
 export default function Blog() {

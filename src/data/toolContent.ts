@@ -481,4 +481,48 @@ export const toolContent: Record<string, ToolContent> = {
       },
     ],
   },
+  noyap: {
+    overview: [
+      'Noyap is a CLI-first ruleset for AI coding agents. It is designed for developers who want agents to spend less space on generic explanation and more attention on concrete code, tradeoffs, warnings, and next actions.',
+      'The tool focuses on communication rules rather than replacing the agent itself. It helps configure concise behavior, multilingual responses, and safer collaboration habits inside coding workflows.',
+    ],
+    steps: [
+      'Open the Noyap website.',
+      'Review the install command and supported agent workflows.',
+      'Run the CLI in a project where you want concise agent rules.',
+      'Choose the agent, language mode, and merge strategy that fit the repository.',
+      'Review generated instructions before relying on them in real work.',
+    ],
+    bestFor: [
+      'Reducing verbose AI coding-agent responses',
+      'Standardizing agent communication rules across projects',
+      'Working naturally with Thai, English, or mixed developer prompts',
+      'Keeping existing AGENTS.md project rules while adding concise defaults',
+    ],
+    examples: [
+      'Add concise AI-agent rules to a project where responses have become too long.',
+      'Configure Thai-native developer phrasing for a local team workflow.',
+      'Merge Noyap defaults into an existing AGENTS.md without overwriting project-specific warnings.',
+    ],
+    limitations: [
+      'Noyap changes communication rules; it does not guarantee the agent will always make correct code decisions.',
+      'Generated or merged instructions should be reviewed before use in important repositories.',
+      'Project-specific safety, deployment, and security rules should remain authoritative.',
+      'Concise responses still need enough detail for high-risk code, migrations, auth, payments, and data handling.',
+    ],
+    relatedGuides: [
+      { title: 'Noyap guide for concise AI coding agents', href: '/blog/noyap-ai-coding-agent-guide' },
+      { title: 'Browser text editor workflows for quick notes and drafts', href: '/blog/browser-text-editor-workflows' },
+    ],
+    faq: [
+      {
+        q: 'Does Noyap replace my coding agent?',
+        a: 'No. Noyap provides communication and workflow rules that can be used with coding agents. The agent still performs the actual code reasoning and edits.',
+      },
+      {
+        q: 'Should concise mode remove warnings?',
+        a: 'No. Concise output should remove filler, not important safety notes, blockers, assumptions, or verification details.',
+      },
+    ],
+  },
 }
